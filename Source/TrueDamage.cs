@@ -21,7 +21,7 @@ public class TrueDamage : BaseUnityPlugin {
 
         harmony = Harmony.CreateAndPatchAll(typeof(TrueDamage).Assembly);
 
-        isTrueDamage = Config.Bind("", "Enable True Damage", true, "");
+        isTrueDamage = Config.Bind("", "Enable True Damage", true, "No internal damage direct hurt");
 
         Instance = this;
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
